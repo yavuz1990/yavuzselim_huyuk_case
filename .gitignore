@@ -1,0 +1,55 @@
+# Java derlenmiş dosyalar
+*.class
+
+# Log dosyaları
+*.log
+
+# Paket dosyaları (JAR, WAR, EAR)
+*.jar
+*.war
+*.ear
+
+# JVM hata raporları
+hs_err_pid*
+
+# Maven hedef dizini
+/target/
+
+# Maven bağımlılık önbelleği (opsiyonel, eğer projenizde tutuyorsanız)
+/dependency-reduced-pom.xml
+/buildNumber.properties
+
+# IntelliJ IDEA dosyaları
+.idea/
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Eclipse dosyaları
+.project
+.classpath
+.settings/
+
+# NetBeans dosyaları
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code ayarları
+.vscode/
+
+# OS tarafından oluşturulan dosyalar
+.DS_Store
+Thumbs.db
+
+# Geçici dosyalar
+*.tmp
+*.temp
+
+
+# Diğer geçici veya derleme sırasında oluşturulan dosyalar
+logs/
