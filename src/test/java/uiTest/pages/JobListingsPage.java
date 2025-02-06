@@ -26,7 +26,7 @@ public class JobListingsPage {
         this.driver = driver;
     }
 
-    public void filterJobs(String location, String department) {
+    public void filterJobs() {
         // Filtreleme işlemi öncesinde sayfanın ve elementlerin tamamen yüklendiğinden emin olun
         PageUtils.waitForPageAndAjaxToLoad(driver);
 
