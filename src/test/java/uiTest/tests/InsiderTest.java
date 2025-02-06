@@ -55,7 +55,7 @@ public void testFilterQAJobs() {
     careersPage.clickSeeAllQaJobs();
 
     JobListingsPage jobListingsPage = new JobListingsPage(driver);
-    jobListingsPage.filterJobs("Istanbul, Turkey", "Quality Assurance");
+    jobListingsPage.filterJobs();
 
     // Eğer bu assertion başarısız olursa, test metodu çalışmaya devam edecek
     softAssert.assertTrue(jobListingsPage.isJobListVisible(), "Job list is not visible!");
