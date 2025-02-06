@@ -18,7 +18,7 @@ public class JobListingsPage {
     private final By viewRoleButton = By.xpath("//a[text()='View Role']");
     private final By locationFilterInput = By.xpath("//*[@id=\"top-filter-form\"]/div[1]/span");
     private final By locationDropDown = By.xpath("//*[@id=\"top-filter-form\"]/div[1]/span");
-    private final By locationOption = By.xpath("//li[contains(@id,'select2-filter-by-location-result') and contains(text(),'Istanbul, Turkey')]");
+    private final By locationOption = By.xpath("//li[contains(@id,'select2-filter-by-location-result') and contains(text(),'Istanbul, Turkiye')]");
     private final By departmentDropdown = By.id("select2-filter-by-department-container");
     private final By departmentOption = By.xpath("//li[contains(@id,'select2-filter-by-department-result') and contains(text(),'Quality Assurance')]");
 
@@ -50,7 +50,7 @@ public class JobListingsPage {
                     )
             );
             locationOption1.click();
-            System.out.println("'Istanbul, Turkey' seçildi.");
+            System.out.println("'Istanbul, Turkiye' seçildi.");
         } catch (Exception e) {
             System.out.println("'Location' açılır menüsünden seçim sırasında hata oluştu: " + e.getMessage());
         }
@@ -98,7 +98,7 @@ public class JobListingsPage {
         List<WebElement> jobs = driver.findElements(jobList);
         for (WebElement job : jobs) {
             String jobText = job.getText();
-            if (!jobText.contains("Quality Assurance") || !jobText.contains("Istanbul, Turkey")) {
+            if (!jobText.contains("Quality Assurance") || !jobText.contains("Istanbul, Turkiye")) {
                 return false;
             }
         }
